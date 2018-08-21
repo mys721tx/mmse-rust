@@ -1,0 +1,11 @@
+[package]
+name = "mmse"
+version = "0.1.0"
+authors = ["Yishen Miao <mys721tx@gmail.com>"]
+
+[dependencies]
+byteorder = "1.2.4"
+
+[dependencies.lz4]
+git = "https://github.com/bozaro/lz4-rs.git"
+rev = "6de7f00"
