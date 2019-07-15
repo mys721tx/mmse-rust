@@ -1,6 +1,3 @@
-extern crate byteorder;
-extern crate lz4;
-
 use std::env::args;
 use std::fmt::format;
 use std::fs::File;
