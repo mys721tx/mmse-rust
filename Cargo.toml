@@ -5,7 +5,7 @@ authors = ["Yishen Miao <mys721tx@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-byteorder = "1.2.4"
+byteorder = "1.4.2"
 
 [dependencies.lz4]
 git = "https://github.com/bozaro/lz4-rs.git"
