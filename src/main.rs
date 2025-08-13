@@ -46,7 +46,7 @@ fn unpack(fpath: &str) {
 
     let buf_info_raw = decompress(&buf_info_com, Some(info.size_raw)).unwrap();
 
-    let mut f_info = File::create(format(format_args!("{}_info.json", basename))).unwrap();
+    let mut f_info = File::create(format(format_args!("{basename}_info.json"))).unwrap();
 
     f_info.write_all(&buf_info_raw).unwrap();
 
@@ -56,7 +56,7 @@ fn unpack(fpath: &str) {
 
     let buf_data_raw = decompress(&buf_data_com, Some(data.size_raw)).unwrap();
 
-    let mut f_data = File::create(format(format_args!("{}_data.json", basename))).unwrap();
+    let mut f_data = File::create(format(format_args!("{basename}_data.json"))).unwrap();
 
     f_data.write_all(&buf_data_raw).unwrap();
 }
@@ -66,7 +66,7 @@ fn main() {
 
     match args.len() {
         2 => unpack(&args[1]),
-        3 => println!("{:?}", args),
+        3 => println!("{args:?}"),
         _ => println!(
             "Usage:
     {cmd} <game.sav>
